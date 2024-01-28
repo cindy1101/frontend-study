@@ -113,10 +113,12 @@ git config --global user.email
         git commit -m "20240128 YEJ"
         git push origin main
 
-        
+
 
   ? 리모트 저장소 추가
   : 새롭게 작업할 로컬 환경에서 새폴더에 git bash 열기 (깃 허브에 올린 거 다운 받기?)
+
+  code 클릭해서 Local HTPPS 복사 클릭
 
   1. 깃 초기화
   : git init
@@ -125,7 +127,7 @@ git config --global user.email
   : git branch -M main
 
   3. 작업하는 환경 (workspace)과 원격 리포지토리를 연결
-  : git remote add origin 리모트저장소URL
+  : git remote add origin 리모트저장소URL (복사 클릭한 거 붙여 넣기!)
 
   4. 원격 리포리토리의 내용을 받아오기
   : git pull origin main
