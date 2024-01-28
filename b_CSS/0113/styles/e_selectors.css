@@ -1,0 +1,35 @@
+*{
+    margin: 0; padding: 0;
+}
+
+
+p {
+    /*기울어짐*/
+    font-style: italic;
+}
+
+/*마침표와 클래스명을 붙여서 사용*/
+.oddNumber 
+{color: tomato;}
+
+/*특정 요소에 있는 특정 클래스에만 스타일 적용 가능
+-> 요소명.클래스명을 붙여서 적용!*/
+p.first 
+{font-weight: bold; /*글자 두께 : 두껍게*/
+color: yellowgreen;}
+
+/*특정 요소에 해당 아이디 적용
+-> 특정요소#아이디명 (잘 사용하지 않음)*/
+h1#title
+{text-align: center;
+/*텍스트 정렬을 가운데로*/}
+
+#container
+{border: 1px solid black;}
+
+/*그룹 선택자*/
+h1, p
+{font-size: small;}
+
+.oddNumber, #title
+{font-size: large;}

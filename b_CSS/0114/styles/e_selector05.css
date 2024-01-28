@@ -1,0 +1,24 @@
+/*부모요소(div)의 첫 번째 자식*/
+p:first-child{
+    color: blue;
+}
+
+p:nth-child(2){
+    color: green;
+}
+
+p:last-child{
+    color: red;
+}
+
+p:not(.spacial){
+    background-color: yellow;
+}
+
+/*컨테이너의 p인 자식 중에 세 번째!*/
+.container p:nth-of-type(3)
+{background-color: green;}
+
+/*2의 배수로 두 번째 자식부터 실행!*/
+.container p:nth-child(2n+2)
+{background-color: aqua;}

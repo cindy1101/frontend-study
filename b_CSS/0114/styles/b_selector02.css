@@ -1,0 +1,49 @@
+/* [속성]선택자 */
+input[value] {
+    background-color: yellow;
+}
+
+/* [속성="값"] 선택자 */
+input[type="password"] {
+    background-color: green;
+}
+
+/* [속성~="값"] 선택자 - 여러 속성을 적용할 때!*/
+/* ~ 빼고 = 이거면 속성값이 무조건 똑같아야지 됨!*/
+div[class~="sentence"]{
+    border: 1px solid black;
+}
+
+input[value~="Name"] {
+    border: 1px solid pink;
+}
+
+/*[속성|="값"] 선택자*/
+
+/*
+- 하이픈으로 연결된 속성값은 스타일 적용에 무시
+: 연결된 단어이지만 각각의 속성값으로 적용 가능
+*/
+
+div[class|="sentence"]{
+    text-decoration: underline;
+}
+
+/*[속성^="값"] 선택자*/
+a[href^="https://"]{
+    color: green;
+}
+
+/*[속성$="값"] 선택자*/
+a[href$=".com"] {
+    background-color: black;
+}
+
+/*[속성*="값"]*/
+.example[class*="example"]{
+    font-size: 20px;
+}
+
+/*
+*[class*="example"]{} -> 많이 사용하지는 않음!
+*/

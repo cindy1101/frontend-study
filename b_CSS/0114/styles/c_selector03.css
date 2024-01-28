@@ -1,0 +1,27 @@
+/*네비게이션 바 스타일 설정*/
+.navbar {
+    background-color: #333;
+}
+
+.navbar ul{
+    list-style-type: none;
+}
+
+/*링크 스타일 설정*/
+a {
+    color: white;
+    text-decoration: none;
+}
+
+/*방문한 링크와 방문하지 않은 링크 설정*/
+.navbar a:link, .navbar a:visited{
+    background-color: #333;
+    color: yellow;
+}
+
+/*마우스 포인터로 클릭했을 때 설정*/
+.navbar a:hover, .navbar a:active{
+    background-color: red;
+}
+
+

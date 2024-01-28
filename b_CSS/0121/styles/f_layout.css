@@ -1,0 +1,55 @@
+* {margin: 0; padding: 0;}
+
+.block {
+    display: block;
+    background-color: lightskyblue;
+    width: 100%;
+    margin: 10px 0;
+    padding: 15px;
+    text-align: center;
+}
+
+.inline {
+    display: inline;
+    background-color: lightgreen;
+    /*margin과 padding이 좌우에만 적용*/
+    margin: 10px; padding: 5px;
+}
+
+.inline-block {
+    display: inline-block;
+    background-color: lightcoral;
+    width: 200px; height: 20px;
+    /*margin 과 padding이 상하좌우 모두 적용*/
+    margin: 10px; padding: 15px;
+    text-align: center;
+}
+
+nav ul {
+    width: fit-content;
+    margin: 0 auto;
+    list-style: none;
+}
+
+nav ul li {
+    display: inline-block;
+    padding: 20px; margin: 0 20px;
+    border: 1px solid #222;
+    background-color: lightgreen;
+}
+
+img {
+    width: 150px; height: 150px;
+    float: left;
+}
+
+.float-left{
+    width: 100px; height: 100px;
+    float: left;
+    background-color: lightpink;
+}
+
+.clear-both {
+    clear: both;
+    border: 1px solid lightblue;
+}

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML 테이블</title>
+    <style>
+        table, tr, td, th {
+            border: 1px solid #ccc;
+            border-collapse: collapse;
+        }
+
+        th, td{
+            padding: 10px 20px;
+        }
+    </style>
+</head>
+<body>
+        <!--
+            1. 테이블(표)의 구성 요소
+            - 행(row / 가로), 열(colum / 세로), 셀(cell / 행과 열이 교차되는 시점, 표의 내용이 들어가는 한 칸을 의미)
+
+            2. <table>, <caption> 태그
+            - 표를 만드는 태그
+            <table> </table> : 표를 생성
+            <caption></caption> : 표의 제목을 삽입
+
+            3. <tr>, <td>, <th> 태그
+            - 행과 셀을 만드는 태그
+            <tr> : 행 생성
+            <td>, <th : 테이블 헤더의 줄임말> : 셀 생성
+
+            4. <thead>, <tbody>, <tfoot>
+            - table 의  t와 제목[head] 본문[body] 요약[foot]을 합친 단어
+            - 표의 구조를 지정할 경우 시각 장애인 화면낭독기를 통해 손 쉽게 이해
+
+
+            * 수업자료
+            https://roan-hill-431.notion.site/HTML-c9a361ee960f4ab3adbd560763ff9da9
+
+          -->
+
+          <table>
+                <caption>표 제목</caption>
+
+                <tr>
+                    <th>1행 제목</th><!--테이블 헤드-->
+                    <td>내용</td> <!--테이블 데이터-->
+                    <td>내용</td>
+                    <td>내용</td>
+                </tr><!--row : 행-->
+                <tr>
+                    <th>2행 제목</th>
+                    <td>내용</td>
+                    <td>내용</td>
+                    <td>내용</td>
+                </tr>
+                <tr>
+                    <th>3행 제목</th>
+                    <td>내용</td>
+                    <td>내용</td>
+                    <td>내용</td>
+                </tr>
+          </table><!--3행 4열 표-->
+
+          <table>
+
+            <caption>표2 제목</caption>
+
+            <thead>
+                <tr>
+                    <th>1열 제목</th>
+                    <th>2열 제목</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>내용</td>
+                    <td>내용</td>
+                </tr>
+            </tbody>
+
+            <tfoot>
+                <tr>
+                    <td>설명</td>
+                    <td>설명</td>
+                </tr>
+            </tfoot>
+
+
+          </table>
+</body>
+</html>

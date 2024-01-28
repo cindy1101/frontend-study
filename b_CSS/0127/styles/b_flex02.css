@@ -1,0 +1,31 @@
+body {
+    margin: 0;
+}
+
+header {
+    width: 100%; height: 100px;
+    background-color: purple;
+}
+
+h1 {
+    color: #fff;
+    text-align: center; line-height: 100px;
+    margin: 0;
+}
+
+section {
+    display: flex;
+}
+
+article {
+    padding: 10px;
+    margin: 10px;
+    background-color: aqua;
+    flex: 1 200px;
+}
+
+/*article 태그 중 3번째로 나타나는 요소를 선택*/
+article:nth-of-type(3) {
+    /*a,b 에는 1의 비율 c에는 2의 비율을 차지*/
+    flex: 2 200px;
+}

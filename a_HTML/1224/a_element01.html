@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Element (요소)</title>
+    <!-- 
+        주석 단축기 : ctrl + /
+        줄 위치 바꾸기 : alt + 방향키 (위,아래)
+        live server 단축기 : alt + l + o 
+        emmet 기능 사용시 자동 완성이 해제된 경우 emmet 문자에 'ctrl+space'
+     -->
+</head>
+<body><!--body = 여는 태그-->
+    <!-- 
+        HTML Element (요소) : HTML 문서나 웹 페이지를 이루는 개별적인 요소를 의미하며 문서 객체 모델 (DOM)으로 파싱 
+        
+        HTML 요소의 구조 : 여는 태그, 닫는 태그, 내용 / 시작 태그에서 끝 태그의 모든 것
+     -->
+
+     <h1>표제입니다.</h1> <!--타이틀-->
+     <p>문단입니다.</p> <!--문단을 나타내는 것-->
+     <br /> 
+     <!--컨텐츠가 없고 닫히는 태그가 없는 단일 태그 / 빈 요소 / void 태그
+    하지만 닫히는 꺽쇠(>)에 슬래시를 넣어 끝 태그 작성 권장합니다. (예) <br> <br /> 
+    XML : 엄격한 HTML (닫히는 태그 반드시 있어야 함 / 대소문자 구분) !리액트 작업시 필요!-->
+    
+
+    <!-- 중첩된 HTML 요소 : 요소가 다른 요소를 포함 가능
+                           요소 안에 요소를 담는다!
+                           모든 HTML 문서는 중첩된 HTML 요소로 구성
+                           ! 요소가 열리는 순서에 따라 닫혀야 합니다 !
+    -->
+
+
+    <!--줄 정렬 단축기 : 정렬할 부분을 드래그해 ctrl + k + f
+                        열리는 태그를 기준으로 정렬합니다.
+    -->
+
+    <p>I want
+        <strong>
+            strawberry
+        </strong> chocolate whipped cream cake
+    </p>
+
+
+    <!--빈 HTML 요소 (Void 요소) : 내용이 없는 HTML 요소
+        <br /> : 줄바꿈 
+        <hr /> : 가로선 
+        <img src="" alt="" />
+        <input type="text" />
+    -->
+
+    <p>
+        안녕하세요.<br />
+        반갑습니다.
+        <hr />
+    </p>
+
+    <!--HTML은 대소문자를 구분하지 않지만 추후 리액트 사용시 (XHTML과 같이 엄격한 문서 유형에 대해서는 소문자를 요구) 어려움이 있을 수 있으므로 소문자를 권장합니다.-->
+
+    <!--
+        태그 : 태그 자체를 가리키는 것
+        요소 : 태그는 적용한 것을 가리키는 것
+    -->
+
+</body><!--/bodt = 닫는 태그-->
+</html>
