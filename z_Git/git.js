@@ -100,13 +100,37 @@ git config --global user.email
     >> 로컬 리포지토리 main 브랜치를 원격 리포지토리에 푸시
     >> -u : 옵션, 추후 git push나 git pull을 진행할 때 브랜치 이름을 생략 가능하도록 설정
 
+    : 작업하는 환경 (workspace)과 원격 리포지토리를 연결
+    : git remote add origin 리모트저장소URL
+
+    1. 파일 오른 쪽 클릭 후  Open Git Bash here 클릭 후 저 위 코드 복사 붙여넣기 후 엔터 후 비밀번호 입력하기 >> 파일 후 README.md 랑 .git 생겼는지 확인하기!
+
+    ! 연동된 저장소에 새로운 파일 
+    1. git status
+    2. workspace에서 remote repository까지 파일 업로드
+
+        git add .
+        git commit -m "20240128 YEJ"
+        git push origin main
+
+        
+
   ? 리모트 저장소 추가
-  : 작업하는 환경 (workspace)과 원격 리포지토리를 연결
+  : 새롭게 작업할 로컬 환경에서 새폴더에 git bash 열기 (깃 허브에 올린 거 다운 받기?)
+
+  1. 깃 초기화
+  : git init
+
+  2. 브랜치 이름 변경
+  : git branch -M main
+
+  3. 작업하는 환경 (workspace)과 원격 리포지토리를 연결
   : git remote add origin 리모트저장소URL
 
+  4. 원격 리포리토리의 내용을 받아오기
+  : git pull origin main
 
-  ! 연동된 저장소에 새로 
-   1. 파일 오른 쪽 클릭 후  Open Git Bash here 클릭 후 저 위 코드 복사 붙여넣기 후 엔터 후 비밀번호 입력하기 >> 파일 후 README.md 랑 .git 생겼는지 확인하기!
-   
+
+
 
 */
