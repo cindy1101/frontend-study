@@ -75,3 +75,62 @@ console.log(a); // 26
 a /= 2; // a에 2를 나누고 그 값을 a에 대입한다 a = a/2 -> a = 26/2 -> a = 13
 console.log(a); // 13
 
+// ! 비교연산자
+// : 두 값을 비교하고, 그 결과를 booleand의 값으로 반환 -> 두 가지의 답 true, false
+
+// : 두 값이 동등하다 (==), 부등 (!=) 
+// : 컴퓨터 프로그램은 ! 은 부정(not)의 뜻입니다.
+// -> 값이 동일한지 테스트한다. (데이터 유형을 고려하지 않습니다.)
+
+// : 일치 (===), 불일치 (!==)
+// -> 엄격한 값과 값의 데이터 유형의 완전한 동일성을 모두 테스트한다.
+
+// : 크다(>), 작다(<), 크거나 같다 (>=), 작거나 같다 (<=)
+
+console.log('--------비교 연산자-------')
+
+let num1 = 10;
+let num2 = '10'
+
+console.log(num1 == num2); //동등 true -> 타입을 신경쓰지 않고 안에 있는 값만 숫자 10, 문자열 10이여도 안의 값이 10이야 그렇기 때문에 true (예) 쌍둥이인데 똑같이 생김
+console.log(num1 != num2); //부등 false 똑같은 형태인데 다르다고 함
+
+console.log(num1 === num2); //일치 false -> 10의 숫자, 10의 문자 그렇기 때문에 다름 (예) 쌍둥이라더라도 내면을 본다 생각 하세용!
+console.log(num1 !== num2); //불일치 true -> 10의 숫자와 10의 문자이기에 다르기 때문에 true
+
+// ? '==' 와 '===' 의 차이
+// : 동등 연산자는 두 값이 같은지 비고할 때 자동으로 타입 변환을 수행 (내용만 비교)
+// : 일치 연산자는 두 값이 같은지 비교할 때 타입 변환 수행 X
+// >> 값과 타입이 모두 같을 때만 true를 반환
+
+//좌항이 기준이 됩니다!
+console.log(num1 > num2); // 초과 num1이 num2보다 크가 false
+console.log(num1 < num2); // 미만 num1이 num2보다 작다 false
+console.log(num1 >= num2); // 이상 num1이 num2보다 크거나 같다 true
+console.log(num1 <= num2); // 이하 num1이 num2보다 작거나 같다 true
+
+// num2 = 90; -> 마우스 올리면 맨 처음 선언한 변수의 값을 알려줌, 오류 방지!
+
+
+// ! 논리 연산자
+// : boolean 값을 연산하는데 사옹
+
+// and 연산자 (논리곱) : &&
+// -> false 값이 하나라도 있으면 무조건 false
+
+// or 연산자 (논리합) : ||
+// -> true 값이 하나라도 있으면 무조건 true
+
+// not 연산자 (부정논리) : !
+
+let bool1 = true;
+let bool2 = false;
+
+console.log('---------논리 연산자-----------');
+
+console.log(bool1 && bool2); // false -> 하나라도 false가 있으면 무조건 false
+console.log(bool1 || bool2); // true -> true가 하나라도 있음 true
+
+console.log(!bool1); // false -> !true : true가 아니래! 그럼 false지!
+console.log(!bool2); // true -> !false : false가 아니래! 그럼 true지!
+
