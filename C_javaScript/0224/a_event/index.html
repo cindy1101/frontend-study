@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>자바스크립트 이벤트(1)</title>
+</head>
+<body>
+
+    <!-- HTML 이벤트 핸들러 프로퍼티 -->
+    <button>Change Color</button>
+
+    <!-- 수평선을 지정하는 요소 : horizin -->
+    <hr />
+
+    <!-- 
+        ? 인라인 이벤트 핸들러
+        : on 속성을 버튼 태그에서 지정하고
+        : 해당 속성에서 사용할 기능(함수)을 js 파일에 작성
+        -> 유지보스가 어렵고 코드가 복잡해지기 때문에 권장하지 않음
+    -->
+
+    <button onclick="bgChange();">Click Me</button>
+    <!-- 버튼 클릭 시 alert 창에 Hello 메시지가 출력 (따로 Js 필요하지 않음) -->
+    <button onclick="alert('hello');">Press Me</button>
+
+    <hr />
+
+    <button>1</button>
+    <button>2</button>
+    <button>3</button>
+    
+    <hr />
+
+    <!-- 3. addEventListener 메서드 사용 -->
+    <button>Change Color</button>
+
+    <script src="./script.js"></script>
+</body>
+</html>
