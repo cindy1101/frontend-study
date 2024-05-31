@@ -1,0 +1,12 @@
+/* 해당 CSS를 사용할 컴포넌트에서 import해서 사용하며 각각의 속성(클래스명과 아이디명)을 동적으로 할당할 때 사용하게 된다. */
+
+.container {
+    color: #333;
+    background-color: #eee;
+}
+
+#uniqueElement{
+    color: blue;
+    background-color: yellow;
+}
+
