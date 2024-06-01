@@ -77,7 +77,7 @@ function App() {
           <Route path='/0511' element={<Index0511 />}/>
           <Route path='/0512' element={<Index0512 />}/>
           <Route path='/0518' element={<Index0518 />}/>
-          <Route path='/0519' element={<Index0519 />}/>
+          <Route path='/0519/*' element={<Index0519 />}/>
 
           {/* 리액트 동적 라우팅 연습 컴포넌트 */}
           <Route path='/0518/:id' element={<Router03 />}/>
